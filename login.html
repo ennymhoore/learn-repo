@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elearning Login form</title>
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <p><a href="/learn.html" class="back"><i class="fa-solid fa-arrow-left-long"></i>  Back to home page</a></p>
+        <input type="checkbox" id="check">
+        <div class="login form">
+             <img src="imgs/Globaltech_Institute_Logo2-removebg-preview.png" alt=""> 
+            <header>Login</header>
+            <form action="#">
+                <input type="text" placeholder="Enter your email">
+                <input type="password"  placeholder="Enter your password" id="password">
+                <div class="spam">
+                    <i class="fa fa-eye" id="eye" onclick="toggle()"></i>
+                </div>
+                <a href="#">Forgot password?</a>
+                <input type="button" class="button" value="Login">
+            </form>
+            <div class="signup">
+                <span class="signup">Don't have an account?
+                    <label for="check">Signup</label>
+                </span>
+            </div>
+            <div class="line"></div>
+            <div class="link">
+                <div class="facebook">
+                    <img src="imgs/fb pics.jpg"> <span>facebook</span>
+                </div>
+                <div class="goggle">
+                    <img src="imgs/goggle.jpg"> <span>goggle</span>
+                </div>
+            </div>
+        </div>
+
+       
+        
+        <div class="registration form">
+             <img src="imgs/Globaltech_Institute_Logo2-removebg-preview.png" alt=""> 
+            <header>Signup</header>
+            <form action="#">
+                <input type="text" placeholder="Enter your email">
+                <input type="password" placeholder="Create a password">
+                <div class="spam">
+                    <i class="fa fa-eye" id="eye" onclick="toggle()"></i>
+                </div>
+                <input type="password" placeholder="Confirm your password">
+                <input type="button" class="button" value="Signup">
+            </form>
+            <div class="signup">
+                <span class="signup">Already have an account?
+                    <label for="check">Login</label>
+                </span>
+            </div>
+            <div class="line"></div>
+            <div class="link">
+                <div class="facebook">
+                    <img src="imgs/fb pics.jpg"> <span>facebook</span>
+                </div>
+                <div class="goggle">
+                    <img src="imgs/goggle.jpg"> <span>goggle</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <script>
+        var state = false;
+    function toggle(){
+        if(state){
+            document.getElementById("password").setAttribute("type","password");
+            state = false;
+        }
+        else{
+            document.getElementById("password").setAttribute("type","text");
+            state = true;
+        }
+    }
+    </script>
+
+</body>
+
+</html>
